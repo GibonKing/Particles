@@ -1,42 +1,22 @@
 ﻿  Performing Custom Build Tools
-D:\Dropbox (Personal)\Teaching\Real-Time 3D Techniques\2019 Share\2019 VS Projects\RT3D2019_Particles\Particles\DrawHeightMap.hlsl(93,23): warning X3206: 'mul': implicit truncation of vector type
-D:\Dropbox (Personal)\Teaching\Real-Time 3D Techniques\2019 Share\2019 VS Projects\RT3D2019_Particles\Particles\DrawHeightMap.hlsl(93,9): warning X3206: implicit truncation of vector type
-D:\Dropbox (Personal)\Teaching\Real-Time 3D Techniques\2019 Share\2019 VS Projects\RT3D2019_Particles\Particles\DrawHeightMap.hlsl(95,33): warning X3206: 'GetLightingColour': implicit truncation of vector type
-  
   Microsoft (R) Direct3D Shader Compiler 9.29.952.3111
   Copyright (C) Microsoft Corporation 2002-2009. All rights reserved.
   
-  compilation succeeded; see D:\Dropbox (Personal)\Teaching\Real-Time 3D Techniques\2019 Share\2019 VS Projects\RT3D2019_Particles\Particles\DrawHeightMap.o
-  Performing Custom Build Tools
-  Microsoft (R) Direct3D Shader Compiler 9.29.952.3111
-  Copyright (C) Microsoft Corporation 2002-2009. All rights reserved.
-  
-  compilation succeeded; see D:\Dropbox (Personal)\Teaching\Real-Time 3D Techniques\2019 Share\2019 VS Projects\RT3D2019_Particles\Particles\DrawShadowCaster.o
-  Performing Custom Build Tools
-  Microsoft (R) Direct3D Shader Compiler 9.29.952.3111
-  Copyright (C) Microsoft Corporation 2002-2009. All rights reserved.
-  
-  compilation succeeded; see D:\Dropbox (Personal)\Teaching\Real-Time 3D Techniques\2019 Share\2019 VS Projects\RT3D2019_Particles\Particles\ParticleFire.o
-  Performing Custom Build Tools
-  Microsoft (R) Direct3D Shader Compiler 9.29.952.3111
-  Copyright (C) Microsoft Corporation 2002-2009. All rights reserved.
-  
-  compilation succeeded; see D:\Dropbox (Personal)\Teaching\Real-Time 3D Techniques\2019 Share\2019 VS Projects\RT3D2019_Particles\Particles\ParticleRain.o
+  compilation succeeded; see F:\ThirdYear\RT3D\Particles\Particles\Particles\ParticleFire.o
   Aeroplane.cpp
-d:\dropbox (personal)\teaching\real-time 3d techniques\2019 share\2019 vs projects\rt3d2019_particles\particles\aeroplane.cpp(90): warning C4101: 'mRotZ': unreferenced local variable
-d:\dropbox (personal)\teaching\real-time 3d techniques\2019 share\2019 vs projects\rt3d2019_particles\particles\aeroplane.cpp(90): warning C4101: 'mRotY': unreferenced local variable
-d:\dropbox (personal)\teaching\real-time 3d techniques\2019 share\2019 vs projects\rt3d2019_particles\particles\aeroplane.cpp(90): warning C4101: 'mRotX': unreferenced local variable
-d:\dropbox (personal)\teaching\real-time 3d techniques\2019 share\2019 vs projects\rt3d2019_particles\particles\aeroplane.cpp(111): warning C4100: 'bPlayerControl': unreferenced formal parameter
+f:\thirdyear\rt3d\particles\particles\particles\aeroplane.cpp(90): warning C4101: 'mRotZ': unreferenced local variable
+f:\thirdyear\rt3d\particles\particles\particles\aeroplane.cpp(90): warning C4101: 'mRotY': unreferenced local variable
+f:\thirdyear\rt3d\particles\particles\particles\aeroplane.cpp(90): warning C4101: 'mRotX': unreferenced local variable
+f:\thirdyear\rt3d\particles\particles\particles\aeroplane.cpp(111): warning C4100: 'bPlayerControl': unreferenced formal parameter
   Application.cpp
-  Effects.cpp
   HeightMap.cpp
-d:\dropbox (personal)\teaching\real-time 3d techniques\2019 share\2019 vs projects\rt3d2019_particles\particles\heightmap.cpp(142): warning C4389: '!=': signed/unsigned mismatch
+f:\thirdyear\rt3d\particles\particles\particles\heightmap.cpp(142): warning C4389: '!=': signed/unsigned mismatch
   ParticleSystem.cpp
   Generating Code...
-Effects11d.lib(d3dxGlobal.obj) : warning LNK4099: PDB 'Effects11d.pdb' was not found with 'Effects11d.lib(d3dxGlobal.obj)' or at 'D:\Dropbox (Personal)\Teaching\Real-Time 3D Techniques\2019 Share\2019 VS Projects\RT3D2019_Particles\Debug\Effects11d.pdb'; linking object as if no debug info
-Effects11d.lib(EffectAPI.obj) : warning LNK4099: PDB 'Effects11d.pdb' was not found with 'Effects11d.lib(EffectAPI.obj)' or at 'D:\Dropbox (Personal)\Teaching\Real-Time 3D Techniques\2019 Share\2019 VS Projects\RT3D2019_Particles\Debug\Effects11d.pdb'; linking object as if no debug info
-Effects11d.lib(EffectLoad.obj) : warning LNK4099: PDB 'Effects11d.pdb' was not found with 'Effects11d.lib(EffectLoad.obj)' or at 'D:\Dropbox (Personal)\Teaching\Real-Time 3D Techniques\2019 Share\2019 VS Projects\RT3D2019_Particles\Debug\Effects11d.pdb'; linking object as if no debug info
-Effects11d.lib(EffectNonRuntime.obj) : warning LNK4099: PDB 'Effects11d.pdb' was not found with 'Effects11d.lib(EffectNonRuntime.obj)' or at 'D:\Dropbox (Personal)\Teaching\Real-Time 3D Techniques\2019 Share\2019 VS Projects\RT3D2019_Particles\Debug\Effects11d.pdb'; linking object as if no debug info
-Effects11d.lib(EffectReflection.obj) : warning LNK4099: PDB 'Effects11d.pdb' was not found with 'Effects11d.lib(EffectReflection.obj)' or at 'D:\Dropbox (Personal)\Teaching\Real-Time 3D Techniques\2019 Share\2019 VS Projects\RT3D2019_Particles\Debug\Effects11d.pdb'; linking object as if no debug info
-Effects11d.lib(EffectRuntime.obj) : warning LNK4099: PDB 'Effects11d.pdb' was not found with 'Effects11d.lib(EffectRuntime.obj)' or at 'D:\Dropbox (Personal)\Teaching\Real-Time 3D Techniques\2019 Share\2019 VS Projects\RT3D2019_Particles\Debug\Effects11d.pdb'; linking object as if no debug info
-  Particles.vcxproj -> D:\Dropbox (Personal)\Teaching\Real-Time 3D Techniques\2019 Share\2019 VS Projects\RT3D2019_Particles\Debug\Particles.exe
+Effects11d.lib(d3dxGlobal.obj) : warning LNK4099: PDB 'Effects11d.pdb' was not found with 'Effects11d.lib(d3dxGlobal.obj)' or at 'F:\ThirdYear\RT3D\Particles\Particles\Debug\Effects11d.pdb'; linking object as if no debug info
+Effects11d.lib(EffectAPI.obj) : warning LNK4099: PDB 'Effects11d.pdb' was not found with 'Effects11d.lib(EffectAPI.obj)' or at 'F:\ThirdYear\RT3D\Particles\Particles\Debug\Effects11d.pdb'; linking object as if no debug info
+Effects11d.lib(EffectLoad.obj) : warning LNK4099: PDB 'Effects11d.pdb' was not found with 'Effects11d.lib(EffectLoad.obj)' or at 'F:\ThirdYear\RT3D\Particles\Particles\Debug\Effects11d.pdb'; linking object as if no debug info
+Effects11d.lib(EffectNonRuntime.obj) : warning LNK4099: PDB 'Effects11d.pdb' was not found with 'Effects11d.lib(EffectNonRuntime.obj)' or at 'F:\ThirdYear\RT3D\Particles\Particles\Debug\Effects11d.pdb'; linking object as if no debug info
+Effects11d.lib(EffectReflection.obj) : warning LNK4099: PDB 'Effects11d.pdb' was not found with 'Effects11d.lib(EffectReflection.obj)' or at 'F:\ThirdYear\RT3D\Particles\Particles\Debug\Effects11d.pdb'; linking object as if no debug info
+Effects11d.lib(EffectRuntime.obj) : warning LNK4099: PDB 'Effects11d.pdb' was not found with 'Effects11d.lib(EffectRuntime.obj)' or at 'F:\ThirdYear\RT3D\Particles\Particles\Debug\Effects11d.pdb'; linking object as if no debug info
+  Particles.vcxproj -> F:\ThirdYear\RT3D\Particles\Particles\Debug\Particles.exe

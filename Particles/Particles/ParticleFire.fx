@@ -104,6 +104,7 @@ struct Particle
 	float3 InitialVelW : VELOCITY;
 	float2 SizeW       : SIZE;
 	float Age          : AGE;
+	float RotSpeed	   : ROTSPEED;
 	uint Type          : TYPE;
 };
   
@@ -138,6 +139,7 @@ void StreamOutGS(point Particle gin[1],
 			p.InitialVelW = vRandom2;
 			p.SizeW       = float2(3.0f, 3.0f);
 			p.Age         = 0.0f;
+			p.RotSpeed	  = 5.0f;
 			p.Type        = PT_FLARE;
 
 			ptStream.Append(p);
@@ -159,7 +161,7 @@ void StreamOutGS(point Particle gin[1],
 
 GeometryShader gsStreamOut = ConstructGSWithSO( 
 	CompileShader( gs_5_0, StreamOutGS() ), 
-	"POSITION.xyz; VELOCITY.xyz; SIZE.xy; AGE.x; TYPE.x" );
+	"POSITION.xyz; VELOCITY.xyz; SIZE.xy; AGE.x; ROTSPEED.x; TYPE.x" );
 	
 technique11 StreamOutTech
 {
