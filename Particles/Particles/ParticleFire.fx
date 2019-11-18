@@ -90,6 +90,18 @@ float3 RandUnitVec3(float offset)
 	// project onto unit sphere
 	return normalize(v);
 }
+
+float3 RandUnitFloat(float offset)
+{
+	// Use game time plus offset to sample random texture.
+	float u = (gGameTime + offset);
+
+	// coordinates in [-1,1]
+	float3 v = gRandomTex.SampleLevel(samLinear, u, 0).x;
+
+	// project onto unit sphere
+	return normalize(v);
+}
  
 //***********************************************
 // STREAM-OUT TECH                              *
@@ -139,7 +151,7 @@ void StreamOutGS(point Particle gin[1],
 			p.InitialVelW = vRandom2;
 			p.SizeW       = float2(3.0f, 3.0f);
 			p.Age         = 0.0f;
-			p.RotSpeed	  = 5.0f;
+			p.RotSpeed	  = RandUnitFloat(0) * 5;
 			p.Type        = PT_FLARE;
 
 			ptStream.Append(p);
@@ -184,10 +196,11 @@ technique11 StreamOutTech
 
 struct VertexOut
 {
-	float3 PosW  : POSITION;
-	float2 SizeW : SIZE;
-	float4 Color : COLOR;
-	uint   Type  : TYPE;
+	float3 PosW		: POSITION;
+	float2 SizeW	: SIZE;
+	float4 Color	: COLOR;
+	float  RotSpeed : ROTSPEED;
+	uint   Type		: TYPE;
 };
 
 VertexOut DrawVS(Particle vin)
@@ -205,6 +218,7 @@ VertexOut DrawVS(Particle vin)
 	
 	vout.SizeW = vin.SizeW;
 	vout.Type  = vin.Type;
+	vout.RotSpeed = vin.RotSpeed;
 	
 	return vout;
 }
@@ -239,10 +253,10 @@ void DrawGS(point VertexOut gin[1],
 		float halfHeight = 0.5f*gin[0].SizeW.y;
 	
 		float4 v[4];
-		v[0] = float4(gin[0].PosW + halfWidth*right - halfHeight*up, 1.0f);
-		v[1] = float4(gin[0].PosW + halfWidth*right + halfHeight*up, 1.0f);
-		v[2] = float4(gin[0].PosW - halfWidth*right - halfHeight*up, 1.0f);
-		v[3] = float4(gin[0].PosW - halfWidth*right + halfHeight*up, 1.0f);
+		v[0] = float4(gin[0].PosW + sin(gin[0].RotSpeed + 135)*halfWidth*right - cos(gin[0].RotSpeed + 135)*halfHeight*up, 1.0f);
+		v[1] = float4(gin[0].PosW + sin(gin[0].RotSpeed + 045)*halfWidth*right + cos(gin[0].RotSpeed + 045)*halfHeight*up, 1.0f);
+		v[2] = float4(gin[0].PosW - sin(gin[0].RotSpeed + 225)*halfWidth*right - cos(gin[0].RotSpeed + 225)*halfHeight*up, 1.0f);
+		v[3] = float4(gin[0].PosW - sin(gin[0].RotSpeed + 315)*halfWidth*right + cos(gin[0].RotSpeed + 315)*halfHeight*up, 1.0f);
 		
 		//
 		// Transform quad vertices to world space and output 
